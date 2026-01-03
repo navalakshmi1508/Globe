@@ -2,33 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GlobeTrotter</title>
+  <title>GlobeTrotter – Travel Planner</title>
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      color: white;
+    }
+
+    header {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 14px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: #ffd166;
+      color: #000;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    section {
+      background: #f5f5f5;
+      color: #333;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .features {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 
 <body>
-  <header class="header">
+
+  <!-- HERO SECTION -->
+  <header>
     <h1>🌍 GlobeTrotter</h1>
     <p>Empowering Personalized Travel Planning</p>
     <button onclick="createTrip()">Plan New Trip</button>
   </header>
 
-  <section class="features">
+  <!-- FEATURES -->
+  <section>
     <h2>✨ Features</h2>
-    <ul>
-      <li>Multi-city trip planning</li>
-      <li>Budget estimation</li>
-      <li>Activity & city search</li>
-      <li>Timeline & calendar view</li>
-      <li>Shareable itineraries</li>
-    </ul>
+    <div class="features">
+      Multi-city trip planning<br>
+      Budget estimation<br>
+      Activity & city search<br>
+      Timeline & calendar view<br>
+      Shareable itineraries
+    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>Hackathon Project • GlobeTrotter</p>
+    Hackathon Project • GlobeTrotter
   </footer>
 
-  <script src="script.js"></script>
+  <!-- SCRIPT -->
+  <script>
+    function createTrip() {
+      window.location.href = "trip.html";
+    }
+  </script>
+
 </body>
 </html>
