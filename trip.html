@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Trip Plan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      background: #ffd166;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🌍 Your Trip Planner</h1>
+    <p>Trip created successfully!</p>
+    <p>Next steps:</p>
+    <ul style="list-style:none;padding:0;">
+      <li>📍 Choose destination</li>
+      <li>📅 Select dates</li>
+      <li>💰 Set budget</li>
+      <li>🎒 Pick activities</li>
+    </ul>
+
+    <button onclick="goBack()">⬅ Back to Home</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
